@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: rgba(255, 255, 255, 0.943);
+    font-family: Arial;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height:25vh;
+}
+.error h1{
+    font-size: 4.5rem;
+    font-family: Arial;
+    color: rgb(50, 50, 50);
+}
+.pup{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pup img{
+    background-attachment: scroll;
+    width: 100vh;
+    height: 60vh;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section p{
+    font-size: 40px;
+    text-align: center;
+}
