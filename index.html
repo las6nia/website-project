@@ -14,21 +14,31 @@
 saving purposes, I've added this code together to add to my repository,
 inspired and walked through by: https://www.youtube.com/@GreatStackDev-->
 
+
+<!--//https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+
 </head>
 <body>
     <section class="header">
         <nav>
-            <a href="university.html"><img src="L logo png.png" alt="Eduford Logo"></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="course.html">Course</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+            <a href="index.html"><img src="L logo png.png" alt="L-DN-Logo"></a>
+
+            <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Platforms</a></li>
+            </ul>
+        </div>
+    </nav>
     </section>
 
     <div class="text-box">
@@ -38,7 +48,17 @@ inspired and walked through by: https://www.youtube.com/@GreatStackDev-->
         <a href="project.html">Projects</a>
         <a href="mailto:lalcalaroblero2@gmail.com">Let's connect!</a>
     </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
 
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('toggle');
+        });
+    });
+    </script>
     
 </body>
 </html>
