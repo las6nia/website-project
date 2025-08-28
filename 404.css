@@ -28,8 +28,8 @@ body{
 }
 .pup img{
     background-attachment: scroll;
-    width: 100vh;
-    height: 60vh;
+    width: 70vh;
+    height: 40vh;
 }
 section{
     display: flex;
@@ -41,8 +41,40 @@ section p{
     font-size: 40px;
     text-align: center;
 }
+
+.return{
+margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.return button{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(113, 113, 113);
+    border-style: none;
+    transition: .2s;
+}
+.return button:hover{
+    transition: .2s;
+    color: black;  
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+
 @media screen and (max-width: 390px) {
-   .error{
+body{
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+    .error{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,15 +119,21 @@ section p{
     margin-top: 200px;
 }
 
-
 }
-
 
 
 
 
 @media screen and (max-width: 430px) {
-   .error{
+body{
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+    .error{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,6 +161,7 @@ section p{
     background-attachment: scroll;
     width: 40vh;
     height: 20vh;
+    align-items: center;
 }
 section{
     display: flex;
@@ -130,6 +169,7 @@ section{
     align-items: center;
     overflow: auto;
     margin-right: 40px;
+    text-align: center;
 }
 section p{
 
@@ -142,3 +182,6 @@ section p{
 
 
 }
+
+
+
