@@ -1,0 +1,229 @@
+/*Ne version*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+}
+
+.top-bar img {
+    width: 40px;
+    padding: 10px;
+}
+
+#phonehub {
+    color: white;
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#hub {
+    display: inline;
+    color: black;
+    background-color: orange;
+    border-radius: 6px;
+    padding: 4px;
+}
+/*FIX*/
+#searchbar {
+    margin-left: 5%;
+    margin-right: 3%;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    padding: 15px 100px;
+    border-radius: 20px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    width: 30%;
+    transition: .5s;
+    display: block;
+
+    text-align: start;
+
+}
+#searchbar::placeholder{
+    text-align: center;
+    display: block;
+}
+
+
+#searchbar:hover{
+    transition: .5s;
+    background-color: rgb(48, 48, 48);
+    color: white;
+
+
+}
+
+#aiphones {
+    background-color: orange;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px 12px;
+    margin-left: 20px;
+    border: none;
+    transition: .5s;
+   
+}
+
+#aiphones:hover{
+    background-color: rgb(248, 187, 75);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*come back to make changes*/
+#uploadvideo,
+#uploadpic, #user {
+    padding-top: 20px;
+    margin-left: 10px;
+    width: 40px;
+}
+
+#user {
+    align-items: end;
+    position:relative;
+    right: 16px;
+    width: 40px;
+}
+
+.option-layout {
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    padding: 10px 0 20px;
+}
+
+.option-layout button {
+    background:none;
+    border-style: none;
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    display: inline;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    padding: 10px;
+    transition: .5s;
+}
+
+.option-layout button:hover {
+    background-color: rgba(128, 128, 128, 0.35);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.banner {
+    text-align: start;
+    width: 100%;
+    margin: 10px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(176, 101, 101);
+}
+
+.banner #text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.banner #usa {
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.selections {
+    text-align: center;
+    margin: 10px; /*https://www.w3schools.com/cssref/pr_pos_overflow.php*/
+    overflow-x: scroll;
+    white-space:nowrap;
+    width: 100%;
+
+}
+/* add overflow to keep sections going*/
+.selections button {
+    background-color: rgb(47, 47, 47);
+    font-size: 20px;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 4px;
+    border: 2px solid rgb(60, 60, 60);
+    cursor: pointer;
+    transition: .4s;
+}
+.selections button:hover {
+    transition: .4s;
+    background-color: rgba(82, 82, 82, 0.924);
+}
+
+.grid{
+display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+  padding: 20px;
+  border: solid blue;
+
+    background-color: red;
+
+}
+
+.grid div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*follow up - https://www.w3schools.com/css/tryit.asp?filename=trycss_grid*/
+
+@media (max-width: 854px) {
+    #searchbar {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .option-layout button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #aiphones {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+
+    .grid div {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    #phonehub {
+        font-size: 24px;
+    }
+}
