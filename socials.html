@@ -196,7 +196,19 @@
     <div class="resumedwnld">
         <button onclick="download()">Resume</button>
     </div>
+
+      <script>
+function download() {
+    const link = document.createElement('a');
+    link.href = '/resources/lalcalaResume.pdf'; 
+    link.download = 'lalcalaresume.pdf';         
+    document.body.appendChild(link);             
+    link.click();
+    document.body.removeChild(link);             
+}
+</script>
 </body>
 </html>
+
 
 
