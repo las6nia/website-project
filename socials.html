@@ -193,22 +193,24 @@
         <a href="https://www.youtube.com/@RobleroVlogs" class="fa fa-youtube" id="youtube"></a>
     </div>
 
-    <div class="resumedwnld">
-        <button onclick="download()">Resume</button>
-    </div>
+   <div class="resumedwnld">
+  <button onclick="downloadResume()">Resume</button>
+</div>
 
-      <script>
-function download() {
-    const link = document.createElement('a');
-    link.href = '/resources/lalcalaResume.pdf'; 
-    link.download = 'lalcalaresume.pdf';         
-    document.body.appendChild(link);             
-    link.click();
-    document.body.removeChild(link);             
+<script>
+function downloadResume() {
+  const link = document.createElement('a');
+  link.href = '/resources/images/lalcalaResume.pdf';
+  link.download = 'lalcalaResume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
+</script>
 </script>
 </body>
 </html>
+
 
 
 
