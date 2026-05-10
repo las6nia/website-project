@@ -32,7 +32,7 @@ inspired and walked through by: https://www.youtube.com/@GreatStackDev-->
 .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(122, 151, 106, 0.33), rgba(131, 131, 131, 0.7)), url(welcome.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(227, 218, 213, 0.33), rgba(131, 131, 131, 0.7)), url(welcome.jpg) center/cover no-repeat;
     position:fixed;
 }
 
@@ -92,7 +92,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(56, 186, 0);
+    background: rgba(186, 37, 18, 0.79);
     display: block;
     margin: auto;
     transition: 0.6s;
@@ -312,112 +312,11 @@ nav img {
     font-size: clamp(0.95rem, 1.7vw, 1.3rem);
 }
 
-
-@media screen and (max-width: 390px) {
-    .hamburger {
-        display: flex;
-    }
-
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: -70px;
-        left: -100%; 
-        background-color: rgba(109, 138, 97, 0.651);
-        text-align: center;
-        transition: left 0.3s ease;
-    }
-
-
-    .nav-links.active {
-        left: 0;
-    }
-
-    .nav-links ul {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
-    .nav-links ul li {
-        margin: 10px 0;
-    }
-
-    .nav-links ul li a {
-        font-size: 16px;
-    }
-    .text-box h1 {
-        font-size: clamp(1.8rem, 7vw, 3.5rem);
-    }
-
-    .text-box p {
-        font-size: clamp(0.8rem, 3vw, 1.2rem);
-    }
-
-    .text-box a {
-        padding: 10px 15px;
-        font-size: clamp(0.8rem, 2.5vw, 1rem);
-    }
-}
-
-
-/*Iphone 14 pro max?*/
-@media screen and (max-width: 430px) {
-
-    .hamburger {
-        display: flex;
-    }
-
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: -70px;
-        left: -100%; 
-        background-color: rgba(67, 59, 8, 0.768);
-        text-align: center;
-        transition: left 0.3s ease;
-    }
-
-
-    .nav-links.active {
-        left: 0;
-    }
-
-    .nav-links ul {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
-    .nav-links ul li {
-        margin: 10px 0;
-    }
-
-    .nav-links ul li a {
-        font-size: 16px;
-    }
-    .text-box h1 {
-        font-size: clamp(1.8rem, 7vw, 3.5rem);
-    }
-
-    .text-box p {
-        font-size: clamp(0.8rem, 3vw, 1.2rem);
-    }
-
-    .text-box a {
-        padding: 10px 15px;
-        font-size: clamp(0.8rem, 2.5vw, 1rem);
-    }
-}
 /*Background color updating + background image*/
 .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(102, 79, 10, 0.601), rgba(131, 101, 40, 0.561)), url(/resources/images/LuisPortrait.jpg) center;
+    background: linear-gradient(rgba(157, 8, 8, 0.601), rgba(173, 43, 14, 0.298)), url(/resources/images/LuisPortrait.jpg) center;
     position: relative;
 }
 
@@ -477,10 +376,10 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: rgba(226, 198, 41, 0.785);
+    background: rgba(226, 41, 41, 0.785);
     display: block;
     margin: auto;
-    transition: 0.6s;
+    transition: 0.5s;
 }
 
 .nav-links ul li:hover::after {
@@ -523,68 +422,88 @@ nav img {
 }
 
 .text-box a:hover {
-    background-color: rgba(21, 99, 57, 0.633);
-    border-radius: 15px;
-    border-color: rgba(0, 255, 119, 0.633);
+    background-color: rgba(99, 21, 21, 0.633); /*Hover button background*/
+    border-radius: 10px;
+    border-color: #C5050C;   /*Hover outline button - come back*/
     font-size: clamp(0.95rem, 1.7vw, 1.3rem);
 }
-
-
-@media screen and (max-width: 430px) {
-    .header {
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(102, 79, 10, 0.601), rgba(131, 101, 40, 0.561)), url(/resources/images/LuisPortrait.jpg) center;
-    position: relative;
+footer{
+    background-color: #C5050C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
 }
-    .hamburger {
-        display: flex;
+
+
+
+@media screen and (max-width:430px){
+
+    .hamburger{
+        display:flex;
     }
 
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: -70px;
-        left: -100%; 
-        background-color: rgba(109, 138, 97, 0.651);
-        text-align: center;
-        transition: left 0.3s ease;
+    .nav-links{
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        top:85px;
+        left:-100%;
+        width:100%;
+        background-color: #C5050C;
+        text-align:center;
+        transition:0.35s ease;
+        padding: 10px 0;
+        border-radius:0 0 18px 18px;
+        z-index:999;
     }
 
-
-    .nav-links.active {
-        left: 0;
+    .nav-links.active{
+        left:0;
     }
 
-    .nav-links ul {
-        flex-direction: column;
-        padding: 20px 0;
+    .nav-links ul{
+        flex-direction:column;
+        gap:10px;
     }
 
-    .nav-links ul li {
-        margin: 10px 0;
+    .nav-links ul li{
+        margin:4px 0;
     }
 
-    .nav-links ul li a {
-        font-size: 16px;
-    }
-    .text-box h1 {
-        font-size: clamp(1.8rem, 7vw, 3.5rem);
+    .nav-links ul li a{
+        font-size:18px;
     }
 
-    .text-box p {
-        font-size: clamp(0.8rem, 3vw, 1.2rem);
+    .text-box{
+        width:90%;
+        top:55%;
     }
 
-    .text-box a {
-        padding: 10px 15px;
-        font-size: clamp(0.8rem, 2.5vw, 1rem);
+    .text-box h1{
+        font-size:2.4rem;
+        line-height:1.1;
+    }
+
+    .text-box p{
+        font-size:1rem;
+        line-height:1.5;
+        margin:8px 0;
+    }
+
+    .text-box a{
+        display:block;
+        width:85%;
+        margin:12px auto;
+        padding:14px;
+        font-size:1rem;
+        border-radius:14px;
+    }
+
+    .text-box a:hover{
+        font-size:1rem;
     }
 }
-/*Updated support*/
 
 
 
@@ -594,7 +513,7 @@ nav img {
         <nav>
             <a href="index.html"><img src="/resources/images/L logo png.png" alt="L-Logo"></a>
 
-            <!-- Hamburger -->
+            <!-- Hamburger *Come back later* -->
         <div class="hamburger" id="hamburger">
             <div></div>
             <div></div>
@@ -613,12 +532,16 @@ nav img {
     </section>
     <div class="text-box">
         <h1>Luis Alcala Roblero</h1>
-        <p>University of Wisconsin - Green Bay</p>
-        <p id="ital">Software Engineering</p>
-        <a href="/projects/project.html">Projects</a>
-        <a href="mailto:lalcalaroblero2@gmail.com">Let's connect!</a>
+        <p>University of Wisconsin - Madison</p>
+        <p id="ital">Bachelor of Science in Computer Science (B.S.)</p>
+        <a href="404.html">Projects</a>
+        <a href="mailto:alcalarobler@wisc.edu">Let's connect!</a>
         <a href="socials.html">Socials</a> <!--Add hover animation-->
     </div>
+
+    <footer>
+         <p>© 2026 Luis Alcala. All rights reserved.</p>
+    </footer>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const hamburger = document.getElementById('hamburger');
