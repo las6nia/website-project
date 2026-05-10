@@ -17,11 +17,16 @@
             font-family: "Libre Franklin", sans-serif;
             background-repeat: no-repeat;
         }
+        #lLogo{
+            padding-left: 10px;
+            display:grid;
+
+        }
         body{
        
-        min-height: 97vh;
+        min-height: 100vh;
         width: 100%;
-        background: linear-gradient(rgba(102, 79, 10, 0.601), rgba(196, 143, 36, 0.561)), url(/resources/images/meandteddy2.jpg) center/cover no-repeat;
+        background: linear-gradient(rgba(157, 8, 8, 0.601), rgba(173, 43, 14, 0.298)), url(/resources/images/meandteddy2.jpg) center/cover no-repeat;
         position:relative;
             
         }
@@ -37,12 +42,13 @@
         color: white;
         height: 40vh;
         justify-content: center;
-        padding-top: vh;
+        margin-top: 20vh;
+        align-items: center;
 
-        background-color: rgba(88, 55, 12, 0.745);
+        background-color: rgba(195, 58, 54, 0.745);
         border-radius: 20px;
-        width: 80%;
-        margin: auto auto; /* centers horizontally */
+        width: 60%;
+        margin: 100px auto; /* centers horizontally */
         padding: 10px;
         text-align: center;
 }
@@ -76,7 +82,7 @@
         .resumedwnld button{
              color: whitesmoke;
              font-weight: 500;
-            background-color: rgba(88, 55, 12, 0.902);
+            background-color: rgba(165, 21, 21, 0.902);
             font-size: 25px;
             border-radius: 10px;
             padding: 10px;
@@ -86,7 +92,7 @@
 
         }
           .resumedwnld button:hover{
-            background-color: rgba(170, 104, 18, 0.531);
+            background-color: rgba(213, 32, 22, 0.922);
             color: whitesmoke;
             transition: .3s;
             cursor: pointer;
@@ -133,54 +139,66 @@
             color: rgb(255, 147, 147);
         }
         
-    
+@media screen and (max-width: 430px) {
 
-
-
-        @media screen and (max-width: 430px) {
-        .mainTitle{
-            padding-top: 40px;
-            padding-bottom: 10px;
-        }
-        .mainSection h2{
-            padding-top: 20px ;
-        }
-
-         .mainSection {
-        color: white;
-        height: 20vh;
+    #lLogo{
         justify-content: center;
+        padding-left: 0;
+        margin-top: 15px;
+    }
 
-        background-color: rgba(88, 55, 12, 0.745);
-        border-radius: 20px;
-        width: 80%;
-        height: fit-content;
-        margin: 0 auto; /* centers horizontally */
-        padding: 10px;
-        text-align: center;
-}
+    #lLogo img{
+        width: 90px;
+        height: auto;
+    }
+
+    .mainSection{
+        width: 90%;
+        height: auto;
+        margin-top: 40px;
+        padding: 20px 15px;
+    }
+
+    .mainSection h2{
+        font-size: 24px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .mainSection p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+
     .mainSection a{
-    padding-bottom: 20px;
+        font-size: 34px;
+        margin: 14px 10px;
+        display: inline-block;
     }
-   .resumedwnld button{
-             color: whitesmoke;
-             font-weight: 500;
-            background-color: rgba(88, 55, 12, 0.902);
-            font-size: 25px;
-            border-radius: 10px;
-            padding: 10px;
-            margin-top: 20px;
-            border-style: none;
-            width: 70%;
-            transition: .4s;
-        }
+
+    .resumedwnld{
+        margin-top: 20px;
+        padding-bottom: 30px;
     }
+
+    .resumedwnld button{
+        width: 85%;
+        font-size: 20px;
+        padding: 14px;
+        border-radius: 12px;
+    }
+}
     </style>
 </head>
 <body>
-    <div class="mainTitle">
-        <h1>Platforms and socials</h1>
-        </div>
+<div>
+
+    <nav id="lLogo">
+            <a href="index.html"><img src="/resources/images/L logo png.png" alt="L-Logo"></a>
+        </nav>
+</div>
+        
 
         <div class="mainSection">
         <h2>Welcome to my socials!</h2>
